@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:background="#99404348"
+       android:layout_margin="5dp"
+       android:layout_height="90dp">
+
+       <ImageView
+           android:id="@+id/User"
+           android:layout_width="80dp"
+           android:layout_marginLeft="10sp"
+           android:layout_height="70dp"
+           android:src="@drawable/user"
+           android:layout_margin="10sp"/>
+
+       <LinearLayout
+           android:id="@+id/wenben"
+           android:layout_marginTop="25dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/User"
+           android:orientation="horizontal">
+
+           <RelativeLayout
+               android:layout_width="280dp"
+               android:layout_height="50dp">
+
+               <TextView
+                   android:id="@+id/nameText"
+                   android:background="@null"
+                   android:hint="@string/head_name"
+                   android:textColor="#FFFFFF"
+                   android:layout_marginTop="2dp"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:textColorHint="#9F9FA0"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dip"
+                   android:layout_marginTop="27dp"
+                   android:background="#83738F"
+                  />
+
+               <TextView
+                   android:id="@+id/tagText"
+                   android:hint="@string/head_tag"
+                   android:textColor="#FFFFFF"
+                   android:textColorHint="#9F9FA0"
+                   android:background="@null"
+                   android:layout_marginTop="28dp"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:singleLine="true"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+           </RelativeLayout>
+       </LinearLayout>
+   </RelativeLayout>
+</LinearLayout>
